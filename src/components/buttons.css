@@ -1,0 +1,18 @@
+.Button {
+  height: 40px;
+  margin: 10px;
+  background-color: white;
+  border-style: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.ButtonPlus {
+  width: 40px;
+  background-color: green;
+  color: #fff;
+}
+.ButtonMinus {
+  width: 40px;
+  background-color: yellow;
+}
