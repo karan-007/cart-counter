@@ -1,5 +1,6 @@
 import React from 'react';
 import Buttons from './buttons';
+import './counter.css';
 
 function counter(props) {
     let count = props.counters.map((counter) => {
@@ -15,10 +16,10 @@ function counter(props) {
     return (
         <div>
             {count}
-            <p>Total Items:{props.total}</p>
+            <p className="total">Total Items:{props.total}</p>
             <p>
-                <button onClick={props.onReload}>Reload</button>
-                <button onClick={props.onReset}>Reset</button>
+                <button className="reloadBtn" onClick={props.onReload}>Reload</button>
+                <button className="resetBtn" onClick={props.onReset}>Reset</button>
             </p>
         </div>
     )
