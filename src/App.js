@@ -18,7 +18,6 @@ class App extends Component {
     }
   }
   onAdd = (id) => {
-    console.log(id, "add");
     let newCounters = [...this.state.counters];
     newCounters.map((counter) => {
       if (counter.id === id) {
@@ -33,7 +32,6 @@ class App extends Component {
   }
 
   onMinus = (id) => {
-    console.log(id, "minus");
     let newCounters = [...this.state.counters];
     newCounters.map((counter) => {
       if (counter.id === id) {
@@ -61,12 +59,10 @@ class App extends Component {
   }
 
   onReset = () => {
-    console.log("reset");
     window.location.reload();
   };
 
   onDelete = (id) => {
-    console.log(id)
     const counters = this.state.counters.filter(c => c.id !== id);
     this.setState({ counters: counters }, () => {
       this.changeTotal();
@@ -74,9 +70,7 @@ class App extends Component {
   }
 
   changeTotal = () => {
-    console.log("change")
     let newCounters = [...this.state.counters];
-    console.log(newCounters);
     let newTotal = 0;
     newCounters.forEach((counter) => {
       if (counter.value !== 0) {
