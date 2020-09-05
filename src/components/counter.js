@@ -15,6 +15,7 @@ function counter(props) {
     })
     return (
         <div>
+            <h1>CART COUNTER</h1>
             {count}
             <p className="total">Total Items:{props.total}</p>
             <p>
