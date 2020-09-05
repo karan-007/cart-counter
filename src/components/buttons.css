@@ -16,3 +16,14 @@
   width: 40px;
   background-color: yellow;
 }
+
+.ButtonDelete {
+  background-color: red;
+  color: #fff;
+  width: 60px;
+}
+.itemValue {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 10px;
+}
